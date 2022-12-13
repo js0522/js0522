@@ -33,13 +33,17 @@ We use sequential model in Keras because we have exactly one input tensor and on
 
 ## File 2: GPT_NEO.ipynb
 
+Run on Jupyter lab using anaconda
+
 # Deployment of GPT-3
 After previous experiments and analysis, we decided to test the “cost” of deploying a GPT-3 model to account for the time needed to allocate more worker. We found GPT-Neo is an open-source alternative to GPT-3 and is publicly available. GPT-Neo has two versions, 1.3 billion and 2.7 billion parameters. Because GPT-3 Ada also uses 2.7 billion parameters, we decided to test on the larger version. Based on the test, we found deploy 2.7 billion parameters model would take around 45 seconds, DRAM consumption is around 9 GB with peak consumption of 19 GB.
 
 # Model test:
 
 Input: How is the weather?
+
 Output Size: 100
+
 Generated Text: “How is the weather?” And one says, “I heard it’s been a dreadful
 night.” In the meantime, the other looks at him and says, “You don’t
 know?” So, one is sure to be in the wrong place at the wrong time.
