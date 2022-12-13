@@ -14,7 +14,7 @@ We also tested deployment time and RAM consumption of load a GPT-3 similar model
 
 ## File 1: CS6111_Final.ipynb
 
-Run on google collab.
+NOTE: Run on google collab.
 
 # Data generation:
 The generate_data() function uses sine function as basis, we first create time_num*sample_num points uniformly throughout the time_num stamps. Then we apply the values with sine function with random noise. Next, we set the offset_num and scale_num so the range of the data is between 7 to 13 with random noise +or- 10%. If needed, we can tune the time_num, sample_num, offset_num and scale_num for different case. Default we are set the time_num as 24 represents 24 hours in a day, sample_num be 600, scale_num be 3 and offset_num be 10.
@@ -33,7 +33,7 @@ We use sequential model in Keras because we have exactly one input tensor and on
 
 ## File 2: GPT_NEO.ipynb
 
-Run on Jupyter lab using anaconda
+NOTE: Run on Jupyter lab using anaconda
 
 # Deployment of GPT-3
 After previous experiments and analysis, we decided to test the “cost” of deploying a GPT-3 model to account for the time needed to allocate more worker. We found GPT-Neo is an open-source alternative to GPT-3 and is publicly available. GPT-Neo has two versions, 1.3 billion and 2.7 billion parameters. Because GPT-3 Ada also uses 2.7 billion parameters, we decided to test on the larger version. Based on the test, we found deploy 2.7 billion parameters model would take around 45 seconds, DRAM consumption is around 9 GB with peak consumption of 19 GB.
